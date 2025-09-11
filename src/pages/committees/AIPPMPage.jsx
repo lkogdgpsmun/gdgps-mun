@@ -1,6 +1,9 @@
+import BackButton from "../../components/BackButton";
+
 function AIPPMPage() {
   return (
     <div className="min-h-screen bg-black text-white pt-24 px-6">
+      <BackButton />
       <section className="mx-auto max-w-6xl text-center mb-10">
         <h3 className="h-serif text-gold mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase tracking-wide">
           AIPPM

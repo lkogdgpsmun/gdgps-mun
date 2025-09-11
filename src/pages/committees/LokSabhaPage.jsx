@@ -1,8 +1,10 @@
 import React from "react";
+import BackButton from "../../components/BackButton";
 
 function LokSabhaPage() {
   return (
     <div className="min-h-screen bg-black text-white pt-24 px-4 sm:px-6">
+      <BackButton />
       <section className="mx-auto max-w-6xl text-center mb-10">
         <h3 className="h-serif text-gold text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase tracking-wide">
           Lok Sabha
