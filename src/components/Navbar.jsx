@@ -42,12 +42,17 @@ function Navbar() {
         { to: "/committees/jcc", label: "JCC" },
         {
           to: "/committees/akbars-ibadat-khana",
-          label: "Akbar’s Ibadat Khana",
+          label: "Akbar's Ibadat Khana",
         },
         { to: "/committees/wto", label: "WTO; DSB" },
         { to: "/committees/unga-ess", label: "UNGA; ESS" },
         { to: "/committees/ipc", label: "International Press Corps" },
       ],
+    },
+    {
+      to: "https://drive.google.com/file/d/1Ng7iXu7XBv8vcUNXRPyxuIeEG9S_x34M/view?usp=sharing",
+      label: "Brochure",
+      external: true,
     },
     { to: "/contact", label: "Contact" },
   ];
@@ -69,23 +74,34 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-3 md:gap-4">
-          {navLinks.map(({ to, label, dropdown }) => (
+          {navLinks.map(({ to, label, dropdown, external }) => (
             <div
               key={to}
               className="relative group"
               onMouseEnter={() => setOpenDropdown(label)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
-              <NavLink
-                to={to}
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-yellow-500 text-black rounded-full font-semibold px-4 py-2 shadow-[0_8px_24px_rgba(212,175,55,0.25)] transition-all duration-300"
-                    : "rounded-full font-semibold px-4 py-2 ring-1 ring-yellow-500/60 shadow-[0_8px_24px_rgba(212,175,55,0.25)] bg-black/70 text-gold transition-all duration-300 hover:bg-yellow-500 hover:!text-black hover:ring-0 hover:shadow-[0_8px_24px_rgba(212,175,55,0.25)]"
-                }
-              >
-                {label}
-              </NavLink>
+              {external ? (
+                <a
+                  href={to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full font-semibold px-4 py-2 ring-1 ring-yellow-500/60 shadow-[0_8px_24px_rgba(212,175,55,0.25)] bg-black/70 text-gold transition-all duration-300 hover:bg-yellow-500 hover:!text-black hover:ring-0 hover:shadow-[0_8px_24px_rgba(212,175,55,0.25)]"
+                >
+                  {label}
+                </a>
+              ) : (
+                <NavLink
+                  to={to}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-yellow-500 text-black rounded-full font-semibold px-4 py-2 shadow-[0_8px_24px_rgba(212,175,55,0.25)] transition-all duration-300"
+                      : "rounded-full font-semibold px-4 py-2 ring-1 ring-yellow-500/60 shadow-[0_8px_24px_rgba(212,175,55,0.25)] bg-black/70 text-gold transition-all duration-300 hover:bg-yellow-500 hover:!text-black hover:ring-0 hover:shadow-[0_8px_24px_rgba(212,175,55,0.25)]"
+                  }
+                >
+                  {label}
+                </NavLink>
+              )}
 
               {/* Dropdown for Desktop */}
               {dropdown && openDropdown === label && (
@@ -113,54 +129,59 @@ function Navbar() {
         </div>
       </div>
 
-     {/* Mobile Menu */}
-{isOpen && (
-  <div className="md:hidden bg-black/90 backdrop-blur-lg flex flex-col items-center gap-4 py-6">
-    {navLinks.map(({ to, label, dropdown }) => (
-      <div key={to} className="w-3/4 text-center">
-        {dropdown ? (
-          // For dropdown items like Addressals and Committees
-          <>
-            <button
-              onClick={() =>
-                setMobileDropdown(mobileDropdown === label ? null : label)
-              }
-              className="rounded-full font-semibold px-6 py-2 block w-full text-sm ring-1 ring-yellow-500/60 bg-black/70 text-gold hover:bg-yellow-500 hover:!text-black hover:ring-0 transition-all duration-300"
-            >
-              {label}{" "}
-              <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
-            </button>
-            {mobileDropdown === label && (
-              <div className="mt-2 flex flex-col gap-2 text-sm">
-                {dropdown.map(({ to, label }) => (
-                  <NavLink
-                    key={to}
-                    to={to}
-                    onClick={() => setIsOpen(false)}
-                    className="text-gold px-4 py-1 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black/90 backdrop-blur-lg flex flex-col items-center gap-4 py-6">
+          {navLinks.map(({ to, label, dropdown, external }) => (
+            <div key={to} className="w-3/4 text-center">
+              {dropdown ? (
+                <>
+                  <button
+                    onClick={() =>
+                      setMobileDropdown(mobileDropdown === label ? null : label)
+                    }
+                    className="rounded-full font-semibold px-6 py-2 block w-full text-sm ring-1 ring-yellow-500/60 bg-black/70 text-gold hover:bg-yellow-500 hover:!text-black hover:ring-0 transition-all duration-300"
                   >
-                    {label}
-                  </NavLink>
-                ))}
-              </div>
-            )}
-          </>
-        ) : (
-          // For normal items like Home, About, Contact
-          <NavLink
-            to={to}
-            onClick={() => setIsOpen(false)}
-            className="rounded-full font-semibold px-6 py-2 block w-full text-sm ring-1 ring-yellow-500/60 bg-black/70 text-gold hover:bg-yellow-500 hover:!text-black hover:ring-0 transition-all duration-300"
-          >
-            {label}
-          </NavLink>
-        )}
-      </div>
-    ))}
-  </div>
-)}
-
-        
+                    {label}{" "}
+                    <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+                  </button>
+                  {mobileDropdown === label && (
+                    <div className="mt-2 flex flex-col gap-2 text-sm">
+                      {dropdown.map(({ to, label }) => (
+                        <NavLink
+                          key={to}
+                          to={to}
+                          onClick={() => setIsOpen(false)}
+                          className="text-gold px-4 py-1 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+                        >
+                          {label}
+                        </NavLink>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : external ? (
+                <a
+                  href={to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full font-semibold px-6 py-2 block w-full text-sm ring-1 ring-yellow-500/60 bg-black/70 text-gold hover:bg-yellow-500 hover:!text-black hover:ring-0 transition-all duration-300"
+                >
+                  {label}
+                </a>
+              ) : (
+                <NavLink
+                  to={to}
+                  onClick={() => setIsOpen(false)}
+                  className="rounded-full font-semibold px-6 py-2 block w-full text-sm ring-1 ring-yellow-500/60 bg-black/70 text-gold hover:bg-yellow-500 hover:!text-black hover:ring-0 transition-all duration-300"
+                >
+                  {label}
+                </NavLink>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }

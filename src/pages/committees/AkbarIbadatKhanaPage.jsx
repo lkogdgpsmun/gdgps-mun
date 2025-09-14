@@ -1,7 +1,7 @@
 import React from "react";
 import BackButton from "../../components/BackButton";
 
-function AkbarIbadatKhanPage() {
+function AkbarIbadatKhanaPage() {
   return (
     <div className="min-h-screen bg-black text-white pt-24 px-4 sm:px-6">
       <BackButton />
@@ -59,4 +59,4 @@ function AkbarIbadatKhanPage() {
   );
 }
 
-export default AkbarIbadatKhanPage;
+export default AkbarIbadatKhanaPage;

@@ -37,6 +37,17 @@ function Footer() {
               </a>
             </li>
           ))}
+          {/* Brochure Link */}
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Ng7iXu7XBv8vcUNXRPyxuIeEG9S_x34M/view?usp=sharing" // replace with actual Drive link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-[#FFD700] transition-colors duration-300 hover:underline"
+            >
+              Brochure
+            </a>
+          </li>
         </ul>
 
         {/* Right - Instagram Handle */}

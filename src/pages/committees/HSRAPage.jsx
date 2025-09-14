@@ -31,18 +31,18 @@ function HSRAPage() {
             British rule in India.” The date is 30 December 1927; death
             penalties have been decreed, and the Hindustan Socialist Republican
             Association (HSRA) is in a state of upheaval. Our plans are now
-            compromised, and trust amongst our ranks has crumbled. Nevertheless,
+            compromised and trust amongst our ranks has crumbled. Nevertheless,
             we rekindled our resolve amidst the ashes of Kakori. Consequently,
             what should be our subsequent measures? How might we reorganize the
             HSRA with a significant portion of our leadership lost? How can we
             continue to operate under constant surveillance? This committee is
             not concerned with debate or diplomatic formalities; it aims to
             initiate genuine change. You will confront the formidable challenges
-            faced by revolutionaries—survival, planning, loyalty, betrayal, and
+            faced by revolutionaries - survival, planning, loyalty, betrayal and
             purpose. If this revolutionary fire is to be ignited within you, if
             you possess the capacity to shape the future of this committee and
-            to honor the sacrifices of martyrs, then step forward. Join the
-            HSRA.
+            to honor the sacrifices of martyrs, then step
+            forward. Join the HSRA.
           </p>
         </div>
 

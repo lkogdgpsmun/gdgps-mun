@@ -58,7 +58,7 @@ function AboutPage() {
           <img
             src="about us.png"
             alt="About GDGPS"
-            className="rounded-2xl shadow-lg w-[250px] sm:w-[300px] md:w-[350px] object-cover"
+            className="rounded-xl shadow-lg w-[400px] sm:w-[420px] md:w-[460px] object-cover"
           />
         </div>
       </section>

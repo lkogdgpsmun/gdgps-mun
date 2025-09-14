@@ -11,16 +11,24 @@ function SecretaryMessage() {
   
         {/* Secretary-General's Message Section */}
         <section className="mx-auto max-w-6xl grid md:grid-cols-5 gap-6 md:gap-10 items-start">
-          {/* Heading */}
-          <div className="md:col-span-2 order-1">
-            <h2 className="h-serif text-gold text-xl sm:text-2xl md:text-3xl uppercase">
-              Secretary-General’s Message
-            </h2>
-            <div className="w-12 sm:w-16 h-[3px] bg-yellow-500 mt-2 sm:mt-3 rounded-full"></div>
+          <div className="md:col-span-2">
+          <h2 className="h-serif text-gold text-xl sm:text-2xl md:text-3xl uppercase">
+          Secretary-General’s Message
+          </h2>
+          <div className="w-12 sm:w-16 h-[3px] bg-yellow-500 mt-2 sm:mt-3 rounded-full"></div>
+
+          {/* SecrataryGeneral Image */}
+          <div className="mt-20 sm:mt-12 md:mt-16 flex justify-center md:justify-start">
+            <img
+              src="/secretarygen.png" // replace with actual image path
+              alt="Secretary-General"
+              className="rounded-xl shadow-lg max-w-[300px] sm:max-w-[320px] md:max-w-[350px] h-auto object-cover"
+            />
           </div>
+        </div>
           {/* Message Box */}
           <div className="md:col-span-3 order-2">
-            <div className="rounded-2xl border border-yellow-500/40 bg-black/40 p-4 sm:p-6 md:p-8 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
+            <div className="rounded-2xl border border-yellow-500/40 bg-black/40 mt-20 sm:mt-20 md:mt-24 p-4 sm:p-6 md:p-8 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 Dear Delegates,
               </p>

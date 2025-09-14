@@ -27,20 +27,20 @@ function DumbartonOaksPage() {
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             Committee Assembles on: August 21, 1944 Welcome to 1944. With the
             severe impact of World War II, humanity lies on the brink of
-            collapse, the world anxiously holds its breath, and history awaits
-            to be written. The then-established international organisation known
-            as the League of Nations ended up crumbling miserably. From the
-            ruins of hopelessness, a tiny glimmer of optimism emerges as four
-            great powers — China, the Soviet Union, the United Kingdom, and the
-            United States — assemble at a conference in Washington, D.C.The four
+            collapse, the world anxiously holds its breath and history awaits to
+            be written. The then-established international organisation known as
+            the League of Nations ended up crumbling miserably. From the ruins
+            of hopelessness, a tiny glimmer of optimism emerges as four great
+            powers – China, the Soviet Union, the United Kingdom and the United
+            States – assemble at a conference in Washington, D.C. The four
             secretly assemble with the single aim of forging a blueprint for a
             new successful international organisation to ensure peaceful
-            coexistence among nations, justice, and the secure future of
+            coexistence among nations, justice and the secure future of
             mankind.The conference navigates itself through questions like how
-            such a large institution would function, who would head it, and
+            such a large institution would function, who would head it and
             whether all the nations would truly collaborate with one another.
             Can trust be rebuilt after the betrayals of war? Can sovereignty
-            survive in a world that demands global unity?
+            survive in a world that demands global unity?
           </p>
         </div>
 
