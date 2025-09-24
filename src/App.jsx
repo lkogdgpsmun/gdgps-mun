@@ -15,6 +15,7 @@ import AkbarIbadatKhanaPage from "./pages/committees/AkbarIbadatKhanaPage.jsx";
 import WTOPage from "./pages/committees/WTOPage.jsx";
 import UNGAESSPage from "./pages/committees/UNGAESSPage.jsx";
 import IPCPage from "./pages/committees/IPCPage.jsx";
+import ComingSoonPage from "./pages/ComingSoonPage.jsx";
 import FrontPage from "./pages/FrontPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
@@ -64,6 +65,7 @@ function App() {
           <Route path="/committees/wto" element={<WTOPage />} />
           <Route path="/committees/unga-ess" element={<UNGAESSPage />} />
           <Route path="/committees/ipc" element={<IPCPage />} />
+          <Route path="/coming-soon" element={<ComingSoonPage />} />
 
           <Route path="/media" element={<MediaPage />} />
         </Routes>

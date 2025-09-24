@@ -42,6 +42,24 @@ function DumbartonOaksPage() {
             Can trust be rebuilt after the betrayals of war? Can sovereignty
             survive in a world that demands global unity?
           </p>
+          <div className="flex flex-wrap gap-3 mt-6">
+            <a
+              href="https://www.instagram.com/p/DOgQyWkgSHF/?igsh=czB5eXZnaTVhamRr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 py-2 rounded-md transition-colors"
+            >
+              Executive Board Members
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1rLqoagdJYxCSyk7jIu0TqNzpJU2mbNrL/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
+            >
+              Background Guide
+            </a>
+          </div>
         </div>
 
         <div className="md:col-span-2 flex justify-center mt-10 md:mt-20 order-1 md:order-2">

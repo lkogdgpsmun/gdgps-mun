@@ -50,9 +50,12 @@ function Navbar() {
       ],
     },
     {
-      to: "https://drive.google.com/file/d/1Ng7iXu7XBv8vcUNXRPyxuIeEG9S_x34M/view?usp=sharing",
-      label: "Brochure",
-      external: true,
+      to: "/resources",
+      label: "Resources",
+      dropdown: [
+        { href: "https://drive.google.com/file/d/1Ng7iXu7XBv8vcUNXRPyxuIeEG9S_x34M/view?usp=sharing", label: "Brochure", external: true },
+        { href: "https://drive.google.com/drive/folders/1XTxhPJ2WHfJZbgrd1ZfGDBxRnQ5l1fzc?usp=drive_link", label: "Background Guidelines", external: true  },
+      ],
     },
     { to: "/contact", label: "Contact" },
   ];
@@ -106,14 +109,26 @@ function Navbar() {
               {/* Dropdown for Desktop */}
               {dropdown && openDropdown === label && (
                 <div className="absolute left-0 mt-2 bg-black/90 backdrop-blur-lg rounded-lg shadow-lg p-2 flex flex-col w-56 z-50">
-                  {dropdown.map(({ to, label }) => (
-                    <NavLink
-                      key={to}
-                      to={to}
-                      className="text-gold px-3 py-2 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
-                    >
-                      {label}
-                    </NavLink>
+                  {dropdown.map((item) => (
+                    item.external ? (
+                      <a
+                        key={item.href || item.to}
+                        href={item.href || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gold px-3 py-2 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <NavLink
+                        key={item.to}
+                        to={item.to}
+                        className="text-gold px-3 py-2 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+                      >
+                        {item.label}
+                      </NavLink>
+                    )
                   ))}
                 </div>
               )}
@@ -147,15 +162,27 @@ function Navbar() {
                   </button>
                   {mobileDropdown === label && (
                     <div className="mt-2 flex flex-col gap-2 text-sm">
-                      {dropdown.map(({ to, label }) => (
-                        <NavLink
-                          key={to}
-                          to={to}
-                          onClick={() => setIsOpen(false)}
-                          className="text-gold px-4 py-1 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
-                        >
-                          {label}
-                        </NavLink>
+                      {dropdown.map((item) => (
+                        item.external ? (
+                          <a
+                            key={item.href || item.to}
+                            href={item.href || "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gold px-4 py-1 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+                          >
+                            {item.label}
+                          </a>
+                        ) : (
+                          <NavLink
+                            key={item.to}
+                            to={item.to}
+                            onClick={() => setIsOpen(false)}
+                            className="text-gold px-4 py-1 rounded-md hover:bg-yellow-500 hover:!text-black transition-all duration-200"
+                          >
+                            {item.label}
+                          </NavLink>
+                        )
                       ))}
                     </div>
                   )}
