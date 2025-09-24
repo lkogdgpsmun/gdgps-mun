@@ -34,7 +34,7 @@ function ComingSoonPage() {
       {/* Centered Coming Soon text */}
       <div className="flex-1 flex items-center justify-center">
         <h1 className="mt-30 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gold uppercase tracking-wide">
-          Coming Soon...
+        Coming soon! <br/>Stay Tuned..
         </h1>
       </div>
     </div>
