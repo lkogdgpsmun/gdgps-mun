@@ -51,12 +51,14 @@ Take your voice beyond speeches. Capture, question, and create with the Internat
                 <span className="inline-block">▾</span>
               </button>
               <div className="hidden group-hover:flex group-focus-within:flex flex-col absolute left-0 mt-2 bg-black/90 backdrop-blur-lg rounded-md shadow-lg w-64 z-20 p-2">
-                <NavLink
-                  to="/coming-soon"
+              <a
+                  href="https://drive.google.com/file/d/1eF_vMJHIAeUgMZrCqKwh3LpmeCCuyl1h/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gold px-3 py-2 rounded hover:bg-yellow-500 hover:!text-black transition-colors"
                 >
                   Photography
-                </NavLink>
+                </a>
                 <a
                   href="https://drive.google.com/file/d/1gs7MSFy7IXMbGgjC0BCTzlINvDI-a_FR/view?usp=sharing"
                   target="_blank"
