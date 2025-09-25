@@ -54,7 +54,7 @@ function HSRAPage() {
               Executive Board Members
             </a>
             <a
-              href="https://drive.google.com/file/d/1NqL8uJ21mnAIdx-QtEydC6lhl2QZAvBr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jGBEE-5sVaRLIfSYynZW6oVQY77QTgep/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"

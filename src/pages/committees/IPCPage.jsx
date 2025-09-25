@@ -58,7 +58,7 @@ Take your voice beyond speeches. Capture, question, and create with the Internat
                   Photography
                 </NavLink>
                 <a
-                  href="https://drive.google.com/file/d/15S3AeyD7LvVROgdW98i9pUPEhDRWUuax/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1gs7MSFy7IXMbGgjC0BCTzlINvDI-a_FR/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gold px-3 py-2 rounded hover:bg-yellow-500 hover:!text-black transition-colors"
