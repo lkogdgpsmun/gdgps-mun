@@ -52,20 +52,20 @@ function UNGAESSPage() {
             >
               Executive Board Members
             </a>
-            <a
+            {/* <a
               href="/coming-soon"
               className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Background Guide
-            </a>
-            {/* <a
-              href="https://example.com/background-guide"
+            </a> */}
+            <a
+              href="https://drive.google.com/file/d/16P9HZ8E0UfLyKR8ieEW_ujOf41oDs3n0/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Background Guide
-            </a> */}
+            </a>
           </div>
         </div>
 

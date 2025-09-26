@@ -44,12 +44,12 @@ function WTOPage() {
               Background Guide
             </a>
             <a
-            href="/coming-soon"
+            // href="/coming-soon"
+            //   className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
+              href="https://drive.google.com/file/d/1EqdBGwGAR6cZ-Bo1wJn-Ok0fbywm0F61/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
-              // href="https://example.com/background-guide"
-              // target="_blank"
-              // rel="noopener noreferrer"
-              // className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Case File
             </a>
