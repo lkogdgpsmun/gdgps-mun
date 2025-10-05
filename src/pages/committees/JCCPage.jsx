@@ -59,19 +59,13 @@ function JCCPage() {
               )}
             </div>
             <a
-              href="/coming-soon"
-              className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
-            >
-              Background Guide
-            </a>
-            {/* <a
-              href="https://example.com/background-guide"
+              href="https://drive.google.com/file/d/1EaaFuHv8DHbvcLEfv-oo-aQ1JFFDyGZm/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Background Guide
-            </a> */}
+            </a>
           </div>
         </div>
 
