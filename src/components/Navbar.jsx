@@ -54,6 +54,7 @@ function Navbar() {
       label: "Resources",
       dropdown: [
         { href: "https://drive.google.com/file/d/1Ng7iXu7XBv8vcUNXRPyxuIeEG9S_x34M/view?usp=sharing", label: "Brochure", external: true },
+        { href: "https://drive.google.com/file/d/1l2_1iHRnGvC97c_uFVjpUcHpiYkmhGRW/view?usp=sharing ", label: "Conference Handbook", external: true },
         { href: "https://drive.google.com/drive/folders/1XTxhPJ2WHfJZbgrd1ZfGDBxRnQ5l1fzc?usp=drive_link", label: "Background Guides", external: true  },
       ],
     },
